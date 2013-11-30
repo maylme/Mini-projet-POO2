@@ -9,6 +9,7 @@ package utilisateurs;
 public abstract class Utilisateurs {
 	
 	private int numIdentifiant;
+        private String password;
 	
 	public Utilisateurs(int numIdentifiant) {
 		this.numIdentifiant = numIdentifiant;
@@ -16,11 +17,7 @@ public abstract class Utilisateurs {
 	
 	public int getNumIdentifiant() {
 		return numIdentifiant;
-	}
-	
-	public void setNumIdentifiant(int numIdentifiant) {
-		this.numIdentifiant = numIdentifiant;
-	}
+	}  
 	
 	@Override
 	public String toString() {
